@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Kiki.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiki's Earth Quest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            line-height: 1.6;
+            /* Kingfisher bird-inspired solid background color */
+            background-color: #DFFBFC;
+            color: #ffffff; /* White text color */
+            padding-top: 80px;
+        }
+          /* Add this new style for the navigation bar */
+          .navbar {
+            background-color: #88B3DE;
+            overflow: visible;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding: 30px 20px;
+            position: relative;
+            border-radius: 20px;
+            width: 85%;
+            margin:10px auto;
+            z-index: 5;
+            font-size: 25px;
+            font-weight: bold;
+            box-shadow: 0 6px 10px rgba(181, 153, 153, 0.12), 0 8px 14px rgba(161, 139, 139, 0.24);
+        }
+        .content-container {
+            background-color: #51adf7;
+            border-radius: 10px;
+            padding: 20px;
+            width: 85%;
+            margin: 10px auto;
+            box-shadow: 0 6px 10px rgba(229, 5, 5, 0.12), 0 8px 14px rgba(0, 0, 0, 0.24);
+        }
+        .welcome-text {
+            color: #DFFBFC;
+            font-size : 50px;
+        }
+        .body-text {
+            color: #ffffff;
+        }
+        .about-text {
+            color: #ffffff;
+            font-size: 20px;
+
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #FF7302;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #F94301;
+        }
+        /* ...the rest of your existing styles... */
+        .navbar a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 8px 16px;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+        .navbar a:hover {
+            background-color: #88B3DE;
+            color: #0C78B0;
+        }
+        .navbar-logo {
+            height: 160px;
+            position: absolute; /* Use absolute positioning for the logo */
+            left: 10px;
+            top: 50%; /* Position the logo vertically in the center of the navbar */
+            transform: translateY(-60%); /* Shift the logo up by 75% of its height */
+            z-index: 10; /* Add a z-index to make the logo appear above the navbar */
+        }
+        h2, h3, h4, h5, h6 {
+            margin-bottom: 20px;
+            font-family: 'poppins', sans-serif;
+            font-size: 10;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 150;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        img {
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        form {
+            display: inline-block;
+            text-align: middle;
+            background-color: #0C78B0; /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 6px 10px rgba(229, 5, 5, 0.12), 0 8px 14px rgba(0, 0, 0, 0.24);
+            color: #ffffff;
+            font-weight: bold;
+            margin-bottom: 70px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="register"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #0C78B0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: #0C78B0;
+        }
+    </style>
+</head>
+<body>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="navbar">
+    <img src="Kiki_Logo.png" alt="Logo" class="navbar-logo">
+    <b><a href="#game-section">GAME</a></b>
+    <b><a href="#about-section">ABOUT</a></b>
+</div>
+<br>
+<div class="content-container">
+<h1 class="welcome-text"> Welcome to Kiki's Earth Quest!</h1>
+<h2 class="body-text"> Help Kiki the Kingfisher solve the SDGs</h2>
+<h2 class="body-text"> Be one of the first to join the quest and create your community!</h2>
+<br>
+<form action="/submit" method="post">
+    <label for="email">Email:</label>
+    <input type="register" id="email" email="email">
+
+    <label for="password">Password:</label>
+<input type="register" id="password" password="Password" required>
+    
+<a href="register.html" class="cta-button">Register</a>
+<a href="signin.html" class="cta-button">Sign in</a>
+</form>
+<section id="game-section"></section>
+<h2 class="body-text"> Here's what Kiki's Earth Quest will look like to your students</h2>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="350" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFyxPkLaAwxEKR8mRzWSvdS%2FMobile-Phone-Realistic-Mockup-(Community)%3Fnode-id%3D2%253A74%26t%3D2ei788qrZyTNS3V2-1" allowfullscreen></iframe>
+<br>
+<br>
+<br>
+<h2 class="body-text"> And here's what your Admin Page will look like</h2>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="350" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0A0AV5kyqHxMOkSfgxoHSx%2FMacBook-Pro-16-Mockup-(Community)%3Fnode-id%3D0%253A2%26t%3DX5xBiyMz6DX48j3c-1" allowfullscreen></iframe>
+
+<section id="about-section"></section>
+<h1 class="body-text"> About</h1>
+<h2 class="about-text"> Kiki's Earth Quest is a gamified solution to smart and sustainable cities by targeting schools and children. The app packages SDGs into bite-sized, real-life challenges for kids. Users can create communities, where they compete against each other to become the most sustainable citizen. </h2>
+<br>
+<h2 class="about-text">The game addresses two objectives by focusing on two groups of interest.</h2>
+<br>
+<br>
+<h2 class="about-text">Adults</h2>
+<h2 class="about-text">To facilitate the transfer of knowledge between the city and its citizens through interactive community learning</h2>
+<br>
+<br>
+<h2 class="about-text">Kids</h2>
+<h2 class="about-text">To cultivate a positive and empowered attitude towards SDGs from a young age</h2>
+<br>
+<br>
+<br>
+<br>
+</div>

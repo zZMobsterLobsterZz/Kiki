@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Kiki.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiki's Earth Quest</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            line-height: 1.6;
+            /* Kingfisher bird-inspired solid background color */
+            background-color: #1e90ff;
+            color: #fff; /* White text color */
+        }
+          /* Add this new style for the navigation bar */
+          .navbar {
+            background-color: #21bbd3;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            margin-right: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar-logo {
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Earth Quest</h1>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+<div class="navbar">
+    <img src="Kiki_Logo.png" alt="Logo" class="navbar-logo">
+    <a href="game.html">Game</a>
+    <a href="about.html">About</a>
+</div>
+
+    <img src="Kiki.png" alt="Kiki the Kingfisher" style="width: 300px; height: 250px;">
+
+    <h1>Kiki the Kingfisher</h1>
+
+    <h2>Take a look at our app design</h2>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFyxPkLaAwxEKR8mRzWSvdS%2FMobile-Phone-Realistic-Mockup-(Community)%3Fnode-id%3D2%253A74%26t%3D2ei788qrZyTNS3V2-1" allowfullscreen></iframe>
+
+    <h1>Be the First to Join the Quest, Join the Waitlist!</h1>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+	<input type="email" id="email" name="email" required>
