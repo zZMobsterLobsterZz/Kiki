@@ -15,24 +15,26 @@
             /* Kingfisher bird-inspired solid background color */
             background-color: #DFFBFC;
             color: #ffffff; /* White text color */
-            padding-top: 80px;
+            padding-top: 200px;
         }
           /* Add this new style for the navigation bar */
-          .navbar {
+        .navbar {
             background-color: #88B3DE;
             overflow: visible;
             display: flex;
             align-items: center;
             justify-content: right;
             padding: 30px 20px;
-            position: relative;
+            position: fixed;
             border-radius: 20px;
-            width: 85%;
-            margin:10px auto;
+            top: 0;
+            left: 7.5%; /* Set left property to create space on the left side */
+            right: 7.5%; /* Set right property to create space on the right side */
             z-index: 5;
             font-size: 25px;
             font-weight: bold;
             box-shadow: 0 6px 10px rgba(181, 153, 153, 0.12), 0 8px 14px rgba(161, 139, 139, 0.24);
+
         }
         .content-container {
             background-color: #51adf7;
@@ -141,6 +143,9 @@
                 top: 50%;
                 transform: translateY(-55%);
                 max-width: 70px;
+            }
+            body {
+                padding-top: 100px;
             }
             .content-container {
                 padding: 10px;
