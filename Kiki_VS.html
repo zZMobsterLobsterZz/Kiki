@@ -17,6 +17,18 @@
             color: #ffffff; /* White text color */
             padding-top: 200px;
         }
+        .navbar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0; /* Add this line */
+            width: 100%;
+            z-index: 5;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 6px 10px rgba(181, 153, 153, 0.12), 0 8px 14px rgba(161, 139, 139, 0.24);
+            background-color: transparent;
+        }
           /* Add this new style for the navigation bar */
         .navbar {
             background-color: #88B3DE;
@@ -25,15 +37,13 @@
             align-items: center;
             justify-content: right;
             padding: 30px 20px;
-            position: fixed;
             border-radius: 20px;
-            top: 0;
-            left: 7.5%; /* Set left property to create space on the left side */
-            right: 7.5%; /* Set right property to create space on the right side */
             z-index: 5;
             font-size: 25px;
             font-weight: bold;
             box-shadow: 0 6px 10px rgba(181, 153, 153, 0.12), 0 8px 14px rgba(161, 139, 139, 0.24);
+            width: 100%; /* Add this line */
+            margin: 10px auto; /* Add this line */
 
         }
         .content-container {
@@ -72,6 +82,8 @@
         }
         /* ...the rest of your existing styles... */
         .navbar a {
+            display: block;
+            float: left;
             text-decoration: none;
             color: rgb(255, 255, 255);
             padding: 8px 16px;
@@ -84,7 +96,7 @@
         }
         .navbar-logo {
             height: 160px;
-            position: absolute; /* Use absolute positioning for the logo */
+            position: fixed; /* Use absolute positioning for the logo */
             left: 10px;
             top: 50%; /* Position the logo vertically in the center of the navbar */
             transform: translateY(-60%); /* Shift the logo up by 75% of its height */
@@ -175,10 +187,12 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-<div class="navbar">
-    <img src="Kiki_Logo.png" alt="Logo" class="navbar-logo">
-    <b><a href="#game-section">GAME</a></b>
-    <b><a href="#about-section">ABOUT</a></b>
+<div class="navbar-container">
+    <div class="navbar">
+        <img src="Kiki_Logo.png" alt="Logo" class="navbar-logo">
+        <b><a href="#game-section">GAME</a></b>
+        <b><a href="#about-section">ABOUT</a></b>
+    </div>
 </div>
 <br>
 <div class="content-container">
